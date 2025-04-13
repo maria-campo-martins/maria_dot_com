@@ -1,0 +1,38 @@
+#navbar {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: blue;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1 {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  #title-container {
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #button-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+  }
+
