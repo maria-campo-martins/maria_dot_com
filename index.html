@@ -8,24 +8,70 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 </head>
 <body>
-    <nav>
-        <ul id="navbar">
-            <li class="nav-li"><a href="index.html">Home</a></li>
-            <li class="nav-li"><a href="about.html">About</a></li>
-            <li class="nav-li"><a href="experience.html">Work Experience</a></li>
-            <li class="nav-li"><a href="projects.html">Projects</a></li>
-            <li class="nav-li"><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <section id="title-container">
-        <h1> Maria Campo Martins </h1>
-        <div id="button-container"> 
-            <button> Download CV </button>
-            <button> Github </button>
-            <button> LinkedIn </button>
-        </div>
-    </section>
+  <nav>
+    <ul id="navbar" class="fade-in fade-in-delay">
+      <li class="nav-li"><a href="#home">Home</a></li>
+      <li class="nav-li"><a href="#about">About</a></li>
+      <li class="nav-li"><a href="#experience">Work Experience</a></li>
+      <li class="nav-li"><a href="#projects">Projects</a></li>
+      <li class="nav-li"><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="home">
+    <div id="name-container">
+      <h1><span id='name'></span></h1>
+    <div id="button-container" class="fade-in fade-in-delay"> 
+      <img class="icon" id="cv-icon" src="images/cv-dark.png" alt="Download CV">
+      <img class="icon" id="github-icon" src="images/github-dark.png" alt="GitHub">
+      <img class="icon" id="linkedin-icon" src="images/linkedin-dark.png" alt="LinkedIn">
+    </div>
+    </div>
+  </section>
+
+  <section class="content-section" id="about">
+    <h2>About Me</h2>
+    <p>
+      Welcome! I am a junior at UCLA majoring in Computer Engineering.
+      I am interested in building web applications, data management systems and machine learning.
+    </p>
+  </section>
+
+  <section class="content-section" id="experience">
+    <h2>Experience</h2>
+    <h3>Sensing and Robotics for Infrastructure Lab at UCLA</h3>
+    <h3>Software Engineering Internship, Intel</h3>
+    <h3>Technology Group Intern, UBS</h3>
+    <h3>UCLA IT Services</h3>
+  </section>
+
+  <section class="content-section" id="projects">
+    <h2>Projects</h2>
+    <h2>Newsify</h2>
+    <h2>Strava2Notion</h2>
+    <h2>ByteBod</h2>
+  </section>
+
+  <section class="content-section" id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <label for="name">Name:</label><br/>
+      <input type="text" id="name" name="name" required><br/><br/>
+
+      <label for="email">Email:</label><br/>
+      <input type="email" id="email" name="email" required><br/><br/>
+
+      <label for="message">Message:</label><br/>
+      <textarea id="message" name="message" rows="5" required></textarea><br/><br/>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="js/index.js"></script>
 </body>
 </html>
