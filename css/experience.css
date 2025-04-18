@@ -1,0 +1,64 @@
+ul.outer-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-wrapper {
+  display: flex;
+}
+
+.card-wrapper.left {
+  justify-content: flex-start;
+}
+
+.card-wrapper.right {
+  justify-content: flex-end;
+}
+
+.card {
+  margin-top: -10vh;
+  background-color: var(--background);
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px var(--secondary);
+  padding: 1.5rem;
+  width: 90%;
+  max-width: 600px;
+  transition: transform 0.3s ease;
+}
+
+#first-card {
+  margin-top: 0;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+h3 {
+  margin-top: 0;
+}
+
+ul.inner-list {
+  display: inline-block;
+  text-align: left;
+  font-size: clamp(1rem, 1.5vw, 2rem);
+  padding-left: 1em;
+}
+
+ul.inner-list li::marker {
+  content: "➤ ";
+  color: var(--accent);
+  font-size: 1.2em;
+}
+
+@media (max-width: 1300px) {
+  ul.outer-list {
+    gap: 2vh;
+  }
+
+  .card {
+    margin-top: 0;
+  }
+}

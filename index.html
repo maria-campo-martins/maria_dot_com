@@ -3,74 +3,187 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <meta name="description" content="Maria Martins' Personal Website" />
+  <title>Maria's Personal Webpage</title>
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/title.css" />
+  <link rel="stylesheet" href="css/gradient.css" />
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="css/experience.css" />
+  <link rel="stylesheet" href="css/projects.css" />
+  <link rel="stylesheet" href="css/contact.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 </head>
 <body>
-  <nav>
+  <nav id="navbar-container" class="fade-in fade-in-delay">
+    <div class="nav-header">
+      <button id="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+    </div>
     <ul id="navbar" class="fade-in fade-in-delay">
       <li class="nav-li"><a href="#home">Home</a></li>
       <li class="nav-li"><a href="#about">About</a></li>
       <li class="nav-li"><a href="#experience">Work Experience</a></li>
       <li class="nav-li"><a href="#projects">Projects</a></li>
       <li class="nav-li"><a href="#contact">Contact</a></li>
+      <li><label class="switch">
+        <input type="checkbox" id="theme-toggle">
+        <span class="slider">
+          <span class="icon sun">☀️</span>
+          <span class="icon moon">🌙</span>
+        </span>
+      </label></li>
     </ul>
   </nav>
 
   <section id="home">
     <div id="name-container">
-      <h1><span id='name'></span></h1>
+      <h1><span id='my-name'></span></h1>
     <div id="button-container" class="fade-in fade-in-delay"> 
       <img class="icon" id="cv-icon" src="images/cv-dark.png" alt="Download CV">
       <img class="icon" id="github-icon" src="images/github-dark.png" alt="GitHub">
       <img class="icon" id="linkedin-icon" src="images/linkedin-dark.png" alt="LinkedIn">
     </div>
     </div>
+    <div class="wrapper">
+      <div class="gradient gradient-1"></div>
+      <div class="gradient gradient-2"></div>
+      <div class="gradient gradient-3"></div>
+    </div>
   </section>
 
   <section class="content-section" id="about">
-    <h2>About Me</h2>
-    <p>
-      Welcome! I am a junior at UCLA majoring in Computer Engineering.
-      I am interested in building web applications, data management systems and machine learning.
-    </p>
+    <div class="about-text">
+      <h2 class="gradient-text">About Me</h2>
+      <p>
+        Hello! I am a junior at UCLA majoring in Computer Engineering with an interest in building web applications that 
+        leverage data management systems and machine learning. 
+      </p>
+      <p>
+        I am currently involved in research at the Sensing and Robots for Infrastructure Lab at UCLA,
+        will be interning at UBS under their technology group in the summer of 2025.
+      </p>
+      <p>
+        I am also a coxswain on the UCLA Men's Rowing team and a student consultant at UCLA IT Services.
+        In my free time, I enjoy running, being in nature, reading and a good breakfast. 
+      </p>
+    </div>
+    <div class="photo-grid">
+      <img src="images/img1.jpg" alt="Maria Coxing" class="grid-item featured">
+      <img src="images/img11.png" alt="Maria and Friends at Half Marathon" class="grid-item">
+      <img src="images/img13.jpeg" alt="Norway Fjord" class="grid-item">
+      <img src="images/img8.jpeg" alt="Breakfast" class="grid-item">
+      <img src="images/img4.jpeg" alt="Maria on boat" class="grid-item">
+      <img src="images/img6.jpeg" alt="Breakfast, croissant" class="grid-item">
+      <img src="images/img12.PNG" alt="Maria with crew" class="grid-item">
+      <img src="images/img2.JPG" alt="Maria coxing during race" class="grid-item">
+      <img src="images/img9.jpeg" alt="Trail run with friends" class="grid-item">
+      <img src="images/img10.jpeg" alt="Ecola State Point" class="grid-item">
+      <img src="images/img5.jpeg" alt="Norway Fjord" class="grid-item">
+      <img src="images/img7.jpeg" alt="Breakfast pastries" class="grid-item">
+      <img src="images/img3.jpeg" alt="Hollywood Sign Hike" class="grid-item">
+    </div>    
   </section>
 
   <section class="content-section" id="experience">
-    <h2>Experience</h2>
-    <h3>Sensing and Robotics for Infrastructure Lab at UCLA</h3>
-    <h3>Software Engineering Internship, Intel</h3>
-    <h3>Technology Group Intern, UBS</h3>
-    <h3>UCLA IT Services</h3>
+    <h2 class="gradient-text">Experience</h2>
+    <ul class="outer-list">
+      <li class="card-wrapper left">
+        <div class="card" id="first-card">
+          <h3>Technology Group Intern, UBS</h3>
+          <ul class="inner-list">
+            <li>Coming soon!</li>
+          </ul>
+        </div>
+      </li>
+      <li class="card-wrapper right">
+        <div class="card">
+          <h3>Software Engineering Internship, Intel</h3>
+          <ul class="inner-list">
+            <li>Built Lambda functions and DynamoDB logic for token management</li>
+            <li>Automated security scanning pipelines using GitHub Actions and Jenkins</li>
+            <li>Used DBaaS and Jenkins to automate testing framework for over 100 API Endpoints</li>
+          </ul>
+        </div>
+      </li>
+      <li class="card-wrapper left">
+        <div class="card">
+          <h3>Research Assistant, Sensing and Robotics for Infrastructure Lab at UCLA</h3>
+          <ul class="inner-list">
+            <li>Developed computer vision models to detect road damage using YOLOv8</li>
+            <li>Generated labeled datasets using Roboflow</li>
+            <li>Wrote python scripts to integrate object detection models with Zed-2 Camera</li>
+          </ul>
+        </div>
+      </li>
+      <li class="card-wrapper right">
+        <div class="card">
+          <h3>Student Consultant, UCLA IT Services</h3>
+          <ul class="inner-list">
+            <li>Resolve technical difficulties faced by UCLA faculty, staff and students</li>
+            <li>Troubleshoot issues related to MFA, VPN, and SSO</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
   </section>
 
   <section class="content-section" id="projects">
-    <h2>Projects</h2>
-    <h2>Newsify</h2>
-    <h2>Strava2Notion</h2>
-    <h2>ByteBod</h2>
+    <h2 class="gradient-text">Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Strava2Notion</h3>
+        <a href="https://github.com/maria-campo-martins/strava-to-notion" target="_blank">View on GitHub</a>
+        <ul>
+          <li>Automatically logs Strava workouts to Notion</li>
+          <li>Uses OAuth2, Strava API and Notion API integration, </li>
+          <li>Currently building!</li>
+        </ul>
+      </div>
+      <div class="project-card">
+        <h3>Newsify</h3>
+        <a href="https://github.com/maria-campo-martins/newsify" target="_blank">View on GitHub</a>
+        <ul>
+          <li>Scrapes news headlines from major outlets using Python's beautifulsoup library</li>
+          <li>Generates AI summaries with Django + React</li>
+          <li>Stores saved articles in PostgreSQL</li>
+        </ul>
+      </div>
+      <div class="project-card">
+        <h3>ByteBod</h3>
+        <a href="https://github.com/AyahKash/ByteBod" target="_blank">View on GitHub</a>
+        <ul>
+          <li>Social fitness platform with workout tracking</li>
+          <li>Implemented user auth, feed filtering, & likes</li>
+          <li>Built collaboratively with Firebase, React and Node.js</li>
+        </ul>
+      </div>
+    </div>
   </section>
 
   <section class="content-section" id="contact">
-    <h2>Contact Me</h2>
+    <h2 class="gradient-text">Contact Me</h2>
     <form>
-      <label for="name">Name:</label><br/>
-      <input type="text" id="name" name="name" required><br/><br/>
-
-      <label for="email">Email:</label><br/>
-      <input type="email" id="email" name="email" required><br/><br/>
-
-      <label for="message">Message:</label><br/>
-      <textarea id="message" name="message" rows="5" required></textarea><br/><br/>
-
-      <button type="submit">Send</button>
+      <fieldset>
+        <legend>Contact Form</legend>
+  
+        <label for="name">Name:</label><br/>
+        <input type="text" id="name" name="name" required><br/><br/>
+  
+        <label for="email">Email:</label><br/>
+        <input type="email" id="email" name="email" required><br/><br/>
+  
+        <label for="message">Message:</label><br/>
+        <textarea id="message" name="message" rows="5" required></textarea><br/><br/>
+  
+        <button type="submit">Send</button>
+      </fieldset>
     </form>
   </section>
-
+  
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <script src="js/index.js"></script>
 </body>

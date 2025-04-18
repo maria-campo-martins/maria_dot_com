@@ -16,56 +16,38 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 10vh;
 }
 
 body {
   font-family: 'Inter', sans-serif;
   background-color: var(--background);
-}
-
-#navbar {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-  
-a[href^='#'] {
-  text-decoration: none;
   color: var(--text);
-  font-weight: bold;
-  font-size: 3em;  
-}
-  
-nav a:hover {   
-  color: var(--accent);
 }
 
-#name-container {
-  margin-top: 20vh;
+.content-section {
   width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+}
+section p {
+  font-size: clamp(1rem, 1.5vw, 2rem);
 }
 
-#name-container h1{
-  font-size: 6em;
-  font-weight: 600;
-  font-family: 'Poppins', sans-serif;
-  color: var(--text);
-}
-
-#button-container {
-  display: flex;
-  flex-direction: row;
-  gap: 1em;
-}
-
-#button-container > img {
-  width: 4em; 
-  cursor: pointer;
+.gradient-text {
+  font-size: 3rem;
+  font-weight: bold;
+  background: -webkit-linear-gradient(left,  var(--text), var(--primary));
+  background: -o-linear-gradient(right, var(--text), var(--primary));
+  background: -moz-linear-gradient(right, var(--text), var(--primary));
+  background: linear-gradient(to right, var(--text), var(--primary)); 
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
 }
 
 .fade-in {
